@@ -1,0 +1,38 @@
+
+.search {
+  z-index: 10;
+}
+
+.errorbox {
+  height: 100vh;
+}
+.error-img{
+  height: 40%;
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .width {
+    width: 90vw !important;
+  }
+  .sidebar {
+    position: fixed !important;
+    bottom: 0 !important;
+    top: 93.9%;
+    z-index: 30 !important;
+  }
+
+  .sidebar .bx {
+    color: white;
+  }
+
+  .sidebarlist {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  
+  .list:hover {
+    background: none !important;
+  }
+}
+
