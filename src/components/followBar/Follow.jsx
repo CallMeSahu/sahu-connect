@@ -27,7 +27,7 @@ export function Follow(){
 
   return(
     <div className="w-full px-2 pb-2 lg:hidden sticky top-0 lg:w-0">
-      <div className="xl:mx-1 mt-10 mr-10 bg-white rounded-md shadow border px-4 pb-3">
+      <div className="xl:mx-1 mt-10 mr-10 bg-white rounded-lg shadow border px-4 pb-3">
         <h1 className="py-4 font-semibold px-3">Suggestions</h1>
         {suggestedUser?.length > 0 ? (
           suggestedUser.map((suggestedUser) => (
