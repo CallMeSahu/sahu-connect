@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { SinglePost } from "../home/components/SinglePost";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
