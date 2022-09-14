@@ -10,7 +10,6 @@ export function EditProfileModal(){
   const { authUser } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const [updateUserData, setUpdateUserData] = useState({});
-  const [loading, setLoading] = useState(false);
 
   const updateUserInforHandler = () => {
     dispatch(updateUserInfo({ userData: { ...updateUserData }, token: token }));
@@ -27,14 +26,12 @@ export function EditProfileModal(){
     const data = new FormData();
     data.append("file", files[0]);
     data.append("upload_preset", "sls1eclu");
-    setLoading(true);
     const res = await fetch(
       "https://api.cloudinary.com/v1_1/dus3r5adq/image/upload",
       { method: "POST", body: data }
     );
     const file = await res.json();
     setUpdateUserData({ ...updateImageHandler, avatar: file.secure_url });
-    setLoading(false);
   };
   return(
     <div
