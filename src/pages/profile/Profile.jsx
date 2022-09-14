@@ -1,6 +1,6 @@
 import { SinglePost } from "../home/components/SinglePost";
 import { UserProfile } from "./components/UserProfile";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 
 export function Profile(){

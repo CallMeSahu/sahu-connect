@@ -1,4 +1,4 @@
-import { SinglePost } from "../../home/components/SinglePost";
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
