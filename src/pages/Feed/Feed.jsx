@@ -87,7 +87,7 @@ export function Feed(){
           {feedPost.length > 0 ? (
             feedPost.map((post) => <SinglePost key={post._id} post={post} />)
           ) : (
-            <div className="text-center font-bold text-lg mt-5 text-blue-500">
+            <div className="text-center font-bold text-lg mt-5 text-slate-500">
               No trending
             </div>
           )}
