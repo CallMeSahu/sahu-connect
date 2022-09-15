@@ -16,7 +16,6 @@ export function SinglePost({ post }){
   const dispatch = useDispatch();
   const [editPost, setEditPost] = useState("");
   const { allUsers, authUser } = useSelector((state) => state.user);
-  const [showCommentBox, setShowCommentBox] = useState(false);
   const { user, token } = useSelector((state) => state.auth);
   const userInfo =
     allUsers && allUsers?.find((user) => user.username === post.username);
@@ -141,7 +140,6 @@ export function SinglePost({ post }){
             ></i>
           </span>
           <span
-            onClick={() => setShowCommentBox((prev) => !prev)}
             className="flex items-center gap-1"
           >
             <i className="bx bx-comment text-xl"></i>
@@ -151,13 +149,9 @@ export function SinglePost({ post }){
           </span>
         </div>
       </div>
-      {showCommentBox ? (
-        <div>
+       <div>
           <Comment post={post}/>
         </div>
-      ) : (
-        <></>
-      )}
     </div>
   ) : (
     <></>
