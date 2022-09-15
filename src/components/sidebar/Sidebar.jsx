@@ -48,8 +48,8 @@ const Sidebar = () => {
           </li>
           </NavLink>
 
+          <NavLink to="/login">
           <li className="py-2 text-xl  flex gap-2 items-center px-3 hover:bg-white  list  shadow-current cursor-pointer rounded-md mb-3 md:mb-0 md:py-0">
-            <NavLink to="/login">
               <i className="bx bx-log-out mr-3 md:text-2xl"></i>
               <span
                 className="md:hidden"
@@ -60,8 +60,8 @@ const Sidebar = () => {
               >
                 Logout
               </span>
-            </NavLink>
           </li>
+          </NavLink>
 
           <li className="py-2 justify-center bg-blue-500 hover:bg-blue-600 text-white text-xl flex gap-2 items-center px-3 cursor-pointer rounded-md mb-3 md:hidden">
             <button
