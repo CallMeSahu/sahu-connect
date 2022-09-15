@@ -32,7 +32,9 @@ export function EditProfileModal(){
     );
     const file = await res.json();
     setUpdateUserData({ ...updateImageHandler, avatar: file.secure_url });
+    
   };
+
   return(
     <div
       className={`container fixed justify-center items-center ${
@@ -60,12 +62,12 @@ export function EditProfileModal(){
                 <img
                   src={updateUserData?.avatar}
                   alt="user_image"
-                  className="h-20 w-20 object-cover rounded-full sm:h-10 sm:w-10 "
+                  className="h-20 w-20 object-cover rounded-full sm:h-10 sm:w-10"
                 />
-                <i className="text-slate-800 bx bxs-camera absolute top-12 left-14 text-lg cursor-pointer bg-white rounded-full px-1 border"></i>
+                <i className="text-slate-800 bx bxs-camera absolute top-12 left-14 text-lg cursor-pointer bg-white rounded-full px-1 border-solid border border-black"></i>
                 <input
                   type="file"
-                  className="absolute opacity-0 w-8  top-7 left-7 cursor-pointer"
+                  className="absolute opacity-0 w-8  top-12 left-14 cursor-pointer"
                   accept="image/jpeg, image/png, image/svg+xml, image/jpg, image/webp, image/apng, image/avif, image/gif,"
                   onChange={updateImageHandler}
                 />
