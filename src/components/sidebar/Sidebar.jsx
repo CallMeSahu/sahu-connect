@@ -19,30 +19,35 @@ const Sidebar = () => {
 
       <div className=" flex justify-center  md:justify-between">
         <ul className=" lg:w-4/5 md:flex md:justify-between md:items-center md:m-0 sidebarlist">
+
+          <NavLink to="/">
           <li className=" py-2 text-xl flex gap-3 items-center px-3 hover:bg-white list cursor-pointer rounded-md mb-3 mt-3 md:py-0">
-            <NavLink to="/">
               <i className="bx bxs-home mr-3 md:text-2xl"></i>
               <span className="md:hidden">Feed</span>
-            </NavLink>
           </li>
-          <li className="py-2 text-xl flex gap-2 items-center px-3 hover:bg-white  list  shadow-current cursor-pointer rounded-md mb-3 md:mb-0 md:py-0">
-            <NavLink to="/explore">
+          </NavLink>
+
+          <NavLink to="/explore">
+          <li className="py-2 text-xl flex gap-2 items-center px-3 hover:bg-white  list  shadow-current cursor-pointer rounded-md mb-3 md:mb-0 md:py-0">            
               <i className="bx bxs-compass mr-3 md:text-2xl"></i>
-              <span className="md:hidden">Explore</span>
-            </NavLink>
+              <span className="md:hidden">Explore</span>            
           </li>
-          <li className="py-2 text-xl flex gap-2 items-center px-3 hover:bg-white  list  shadow-current cursor-pointer rounded-md mb-3 md:mb-0 md:py-0">
-            <NavLink to="/bookmark">
+          </NavLink>
+
+          <NavLink to="/bookmark">
+          <li className="py-2 text-xl flex gap-2 items-center px-3 hover:bg-white  list  shadow-current cursor-pointer rounded-md mb-3 md:mb-0 md:py-0">            
               <i className="bx bxs-bookmark-star mr-3 md:text-2xl"></i>
-              <span className="md:hidden">Bookmark</span>
-            </NavLink>
+              <span className="md:hidden">Bookmark</span>            
           </li>
-          <li className="py-2 text-xl flex gap-2 items-center px-3 hover:bg-white  list  shadow-current cursor-pointer rounded-md mb-3 md:mb-0 md:py-0">
-            <NavLink to="/profile">
+          </NavLink>
+          
+           <NavLink to="/profile">
+          <li className="py-2 text-xl flex gap-2 items-center px-3 hover:bg-white  list  shadow-current cursor-pointer rounded-md mb-3 md:mb-0 md:py-0">           
               <i className="bx bxs-user-circle mr-3 md:text-2xl"></i>
-              <span className="md:hidden">Profile</span>
-            </NavLink>
+              <span className="md:hidden">Profile</span>            
           </li>
+          </NavLink>
+
           <li className="py-2 text-xl  flex gap-2 items-center px-3 hover:bg-white  list  shadow-current cursor-pointer rounded-md mb-3 md:mb-0 md:py-0">
             <NavLink to="/login">
               <i className="bx bx-log-out mr-3 md:text-2xl"></i>
